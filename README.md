@@ -1,6 +1,6 @@
 # drone-python
 
-Small toy project to play around with a drone control setup, without needing an actual drone (or a broker/MQTT/certs to set up).
+Small project to play around with a drone control setup, without needing an actual drone (or a broker/MQTT/certs to set up).
 
 The controller and the drone run as two separate processes and talk over a couple of `multiprocessing.Queue`s — one for commands going out, one for acks coming back. `Drone` itself doesn't do anything real, it just prints what it would be doing (take off, move around, rotate, land, etc.), so you can use it to try out the command flow.
 
